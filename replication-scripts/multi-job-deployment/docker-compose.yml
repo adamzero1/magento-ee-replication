@@ -1,0 +1,9 @@
+version: "3"
+services:
+  php:
+    build:
+      context: ./build/php
+    container_name: php
+    volumes:
+      - ./:/home/ee-replication
+    working_dir: /home/ee-replication
